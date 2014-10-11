@@ -12,6 +12,7 @@
 @interface TableViewController ()
 
 @property (strong, nonatomic) NSArray *beacons;
+@property (strong, nonatomic) CLBeaconRegion *region;
 
 @end
 
@@ -54,7 +55,7 @@
     
     // Configure the cell...
     CLBeacon *beacon = self.beacons[indexPath.row];
-    cell.textLabel.text = beacon.description;
+    cell.textLabel.text = self.region.identifier;
     NSNumberFormatter *nf = [[NSNumberFormatter alloc] init];
     nf.numberStyle = NSNumberFormatterDecimalStyle;
     cell.detailTextLabel.text = [nf stringFromNumber:[NSNumber numberWithDouble:beacon.accuracy]];
@@ -115,6 +116,7 @@
 - (void)locationManager:(CLLocationManager *)manager didRangeBeacons:(NSArray *)beacons inRegion:(CLBeaconRegion *)region
 {
     self.beacons = beacons;
+    self.region = region;
     [self.tableView reloadData];
     for (CLBeacon *beacon in beacons) {
         NSLog(@"beacon: %@", beacon);
