@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		88C8464C19E9D47300D1BCDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C8464B19E9D47300D1BCDD /* main.m */; };
 		88C8464F19E9D47300D1BCDD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C8464E19E9D47300D1BCDD /* AppDelegate.m */; };
-		88C8465219E9D47300D1BCDD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C8465119E9D47300D1BCDD /* ViewController.m */; };
 		88C8465519E9D47300D1BCDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88C8465319E9D47300D1BCDD /* Main.storyboard */; };
 		88C8465719E9D47300D1BCDD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88C8465619E9D47300D1BCDD /* Images.xcassets */; };
 		88C8465A19E9D47300D1BCDD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88C8465819E9D47300D1BCDD /* LaunchScreen.xib */; };
 		88C8466619E9D47300D1BCDD /* GarageDoorOpenerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C8466519E9D47300D1BCDD /* GarageDoorOpenerTests.m */; };
+		88C8467119E9D95700D1BCDD /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C8467019E9D95700D1BCDD /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +32,14 @@
 		88C8464B19E9D47300D1BCDD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		88C8464D19E9D47300D1BCDD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		88C8464E19E9D47300D1BCDD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		88C8465019E9D47300D1BCDD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		88C8465119E9D47300D1BCDD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		88C8465419E9D47300D1BCDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88C8465619E9D47300D1BCDD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		88C8465919E9D47300D1BCDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		88C8465F19E9D47300D1BCDD /* GarageDoorOpenerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GarageDoorOpenerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88C8466419E9D47300D1BCDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88C8466519E9D47300D1BCDD /* GarageDoorOpenerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GarageDoorOpenerTests.m; sourceTree = "<group>"; };
+		88C8466F19E9D95700D1BCDD /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		88C8467019E9D95700D1BCDD /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +83,12 @@
 			children = (
 				88C8464D19E9D47300D1BCDD /* AppDelegate.h */,
 				88C8464E19E9D47300D1BCDD /* AppDelegate.m */,
-				88C8465019E9D47300D1BCDD /* ViewController.h */,
-				88C8465119E9D47300D1BCDD /* ViewController.m */,
 				88C8465319E9D47300D1BCDD /* Main.storyboard */,
 				88C8465619E9D47300D1BCDD /* Images.xcassets */,
 				88C8465819E9D47300D1BCDD /* LaunchScreen.xib */,
 				88C8464919E9D47300D1BCDD /* Supporting Files */,
+				88C8466F19E9D95700D1BCDD /* TableViewController.h */,
+				88C8467019E9D95700D1BCDD /* TableViewController.m */,
 			);
 			path = GarageDoorOpener;
 			sourceTree = "<group>";
@@ -219,8 +219,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88C8465219E9D47300D1BCDD /* ViewController.m in Sources */,
 				88C8464F19E9D47300D1BCDD /* AppDelegate.m in Sources */,
+				88C8467119E9D95700D1BCDD /* TableViewController.m in Sources */,
 				88C8464C19E9D47300D1BCDD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,7 +297,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -332,7 +332,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

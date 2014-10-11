@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TableViewController.h
 //  GarageDoorOpener
 //
 //  Created by Al Wold on 10/11/14.
@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface ViewController : UIViewController
-
+@interface TableViewController : UITableViewController <CLLocationManagerDelegate>
 
 @end
-
